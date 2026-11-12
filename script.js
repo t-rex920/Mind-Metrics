@@ -2,7 +2,7 @@
    MindMetrics – frontend logic (vanilla JS)
    ========================================================= */
 
-const API_URL = "https://mind-metrics-doc6.onrender.com"; // FastAPI endpoint
+const API_URL = "https://mind-metrics-doc6.onrender.com/predict"; // FastAPI endpoint
 const MAX_SCORE = 10;                            // gauge scale (0–10)
 const GAUGE_LENGTH = 540.35;                     // circumference of r=86 circle
 
