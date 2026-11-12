@@ -181,7 +181,7 @@ async function requestPrediction(payload) {
     return data.predicted_mental_health_score;
   } catch (err) {
     if (err.name === "AbortError") throw new Error("The request timed out. Is the server running?");
-    if (err instanceof TypeError) throw new Error("Cannot reach the API at 127.0.0.1:8000. Make sure the FastAPI server is running.");
+    if (err instanceof TypeError) throw new Error("Cannot reach the backend. Please check your internet connection or try again later.");
     throw err;
   } finally {
     clearTimeout(timeout);
